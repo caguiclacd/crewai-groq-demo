@@ -26,6 +26,13 @@ GROQ_API_KEY = "your_groq_api_key_here"
 
 6. Click **Deploy**.
 
+## Security notes
+
+- Keep API keys only in Streamlit Secrets (cloud) or `.env` (local).
+- Never commit `.env` or credentials to Git.
+- User input is sanitized before prompt/file-name use.
+- Error messages are generic to avoid exposing internals.
+
 ## Notes
 
 - `.env` is ignored by git and should not be committed.
